@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'analytics',
 ]
 
+# Use the custom user model from the `accounts` app
+AUTH_USER_MODEL = 'accounts.User'
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
